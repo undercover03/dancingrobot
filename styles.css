@@ -1,0 +1,156 @@
+main{
+    border: 3px solid black;
+    height: 500px;
+    margin-top: 100px;
+    background: black;
+}
+
+
+.face{
+    background: blue;
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+
+.leye,.reye{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: black;
+}
+
+
+.body1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.larm{
+    height: 75px;
+    width: 25px;
+    background: blue;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+
+.center{
+    height: 150px;
+    width: 150px;
+    background: blue;
+    border-radius: 0 0 40% 40%;
+}
+
+
+.rarm{
+    height: 75px;
+    width: 25px;
+    background: blue;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: auto;
+    margin-top: -20px;  
+}
+
+
+.lleg{
+    height: 75px;
+    width: 25px;
+    background: blue;
+    border-radius: 50px;
+}
+
+
+.rleg{
+    height: 75px;
+    width: 25px;
+    background: blue;
+    border-radius: 50px;
+}
+
+.main:hover .face{
+    animation: facemove  1s 0.1s ease-in infinite;
+}
+@keyframes facemove {
+    0%{
+        transform:scale(0.2) ;
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+    
+}
+.main:hover .body1{
+    animation: mv 1s 0.1s ease-in infinite;
+}
+@keyframes mv {
+    0%{
+        transform:scale(0.2) ;
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+    
+}
+.main:hover .legs{
+    animation: namemv 1s 0.1s ease-in infinite;
+}
+@keyframes namemv {
+    0%{
+        transform:scale(0.2) ;
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+
+    
+}
